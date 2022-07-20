@@ -3,11 +3,11 @@
 
     <div class="spacer"></div>
 
-    <a mat-button (click)="homePage()">Home</a>
-    <a mat-button (click)="servicesPage()">Services</a>
-    <a mat-button (click)="projectsPage()">Projects</a>
-    <a mat-button (click)="aboutusPage()">About Us</a>
-    <a mat-raised-button (click)="signupPage()">Sign Up</a>
+    <a mat-button (click)="homePage()" [ngClass]="homeP == true ? 'mat-raised-button' : 'mat-button'">Home</a>
+    <a mat-button (click)="servicesPage()" [ngClass]="servicesP == true ? 'mat-raised-button' : 'mat-button'">Services</a>
+    <a mat-button (click)="projectsPage()" [ngClass]="projectsP == true ? 'mat-raised-button' : 'mat-button'">Projects</a>
+    <a mat-button (click)="aboutusPage()" [ngClass]="aboutusP == true ? 'mat-raised-button' : 'mat-button'">About Us</a>
+    <a mat-button (click)="signupPage()" [ngClass]="signupP == true ? 'mat-raised-button' : 'mat-button'">Sign Up</a>
 </mat-toolbar>
 <app-home *ngIf="homeP"></app-home>
 <app-services *ngIf="servicesP"></app-services>

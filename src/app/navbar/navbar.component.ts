@@ -17,6 +17,11 @@ export class NavbarComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    // this.homeP = false;
+    // this.servicesP = false;
+    // this.projectsP = false;
+    // this.aboutusP = false;
+    // this.signupP = false;
   }
 
   homePage(){
